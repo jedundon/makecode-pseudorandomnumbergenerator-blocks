@@ -2,20 +2,27 @@ This MakeCode extension provides simple pseudorandom number generator blocks usi
 
 It should work for all MakeCode environments but has been specifically tested for Arcade and Minecraft. 
 
-To use it, import this repository as an extension in your MakeCode editor. Unless you're using MakeCode for Minecraft, which currently doesn't support GitHub links. To import the extension for Minecraft, import this extension to MakeCode Arcade and then use the share function, publish a link, and import that makecode.com link into MakeCode for Minecraft as an extension.
-
-
-
-> Open this page at [https://jedundon.github.io/makecode-pseudorandomnumbergenerator-blocks/](https://jedundon.github.io/makecode-pseudorandomnumbergenerator-blocks/)
-
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
 
+**MakeCode Arcade**
 * open [https://arcade.makecode.com/](https://arcade.makecode.com/)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
 * search for **https://github.com/jedundon/makecode-pseudorandomnumbergenerator-blocks** and import
+
+**MakeCode for Minecraft**
+* follow the directions above for MakeCode Arcade
+* click the **share icon** at top right
+* click on **publish project**
+* copy the link provided
+* go to the MakeCode editor for Minecraft (e.g. Code Connection, minecraft.makecode.com, built-in for Minecraft Education Edition)
+* click on **New Project** or open an existing
+* click on **Extensions** under the Advanced menu
+* search for the link copied in step 4 and import
+
+After importing, the blocks will show under the Math section.
 
 ## Edit this project ![Build status badge](https://github.com/jedundon/makecode-pseudorandomnumbergenerator-blocks/workflows/MakeCode/badge.svg)
 
