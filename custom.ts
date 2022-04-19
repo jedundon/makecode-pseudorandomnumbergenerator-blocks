@@ -39,6 +39,23 @@ class Rando {
             result = Math.round(result);
         }
         return result;
+    }    
+    
+    /**
+     * Pseudo Percent Chance Block
+     * @param percent chance number, eg: 100
+     * @param pseudo random generator variable, eg: randogen
+     */
+    //% block="%percent percent chance from %Rando(randogen) generator"
+    //% percent.defl=100
+    //% group="PseudoRandom"
+    pseudoPercentChance(percent: number = 100): boolean {
+        let num: number = this.getNumber(0, 100, false);
+        if (num * 100 <= percent) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
@@ -56,21 +73,5 @@ namespace Math {
     //% group="PseudoRandom"
     export function createRando(seed: number): Rando {
         return new Rando(seed);
-    }
-
-    /**
-     * Pseudo Percent Chance Block
-     * @param percent chance number, eg: 100
-     * @param pseudo random generator variable, eg: randogen
-     */
-    //% block="%percent percent chance from %Rando(randogen) generator"
-    //% percent.defl=100
-    //% group="PseudoRandom"
-    export function pseudoPercentChance(percent: number = 100, rando: Rando): boolean {
-        let num: number = rando.getNumber(0, 100, false);
-        if (num * 100 <= percent) {
-            return true;
-        }
-        return false;
     }
 }
