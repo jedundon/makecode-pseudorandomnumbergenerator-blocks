@@ -63,7 +63,7 @@ namespace Math {
      * @param percent chance number, eg: 100
      * @param pseudo random generator variable, eg: randogen
      */
-    //% block="%percent percent chance from %rando generator"
+    //% block="%percent percent chance from %Rando(randogen) generator"
     //% percent.defl=100 rando.defl=randogen
     //% group="PseudoRandom"
     export function pseudoPercentChance(percent: number = 100, rando: Rando): boolean {
