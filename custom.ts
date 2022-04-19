@@ -50,7 +50,7 @@ class Rando {
     //% perc.defl=100
     //% group="PseudoRandom"
     pseudoPercentChance(perc: number = 100): boolean {
-        let num: number = this.getNumber(0, 100, false);
+        let num = this.getNumber(0, 100, false);
         if (num <= perc) {
             return true;
         } else {
