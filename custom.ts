@@ -57,4 +57,20 @@ namespace Math {
     export function createRando(seed: number): Rando {
         return new Rando(seed);
     }
+
+    /**
+     * Pseudo Percent Chance Block
+     * @param percent chance number, eg: 100
+     * @param pseudo random generator variable, eg: randogen
+     */
+    //% block="%percent percent chance from %rando generator"
+    //% percent.defl=100 rando.defl=randogen
+    //% group="PseudoRandom"
+    export function pseudoPercentChance(percent: number = 100, rando: Rando): boolean {
+        let num: number = rando.getNumber(0, 100, false);
+        if (num * 100 <= percent) {
+            return true;
+        }
+        return false;
+    }
 }
